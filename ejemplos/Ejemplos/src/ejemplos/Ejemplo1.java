@@ -13,10 +13,10 @@ public class Ejemplo1 {
 
     /**
      * @param args the command line arguments
-     */
+     */ 
     public static void main(String[] args) {
         // 
-        int[] informacion = {10, 20, 30, 40, 50, 100};
+        int[][] informacion = {10, 20, 30, 40, 50, 20, 100, 123 };
         int suma = obtenerSumaDatos(informacion);
         double promedio = obtenerPromedioDatos(informacion);
         System.out.printf("La suma es %d\n", suma);
@@ -27,10 +27,9 @@ public class Ejemplo1 {
         int suma = 0;
         for (int i = 0; i < datos.length; i++) {
             suma = suma + datos[i];
-        }
+        }   
         return suma;
-    }
-    
+    } 
     public static double obtenerPromedioDatos(int [] datos){
         int suma = 0;
         double promedio;
